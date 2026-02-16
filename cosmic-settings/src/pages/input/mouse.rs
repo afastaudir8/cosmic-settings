@@ -79,7 +79,7 @@ fn mouse() -> Section<crate::pages::Message> {
                             + 0.81)
                             * 70.71;
 
-                        let slider = widget::slider(0.0..=100.0, value, |value| {
+                        let slider = widget::slider(0.0..=150.0, value, |value| {
                             Message::SetMouseSpeed((value / 70.71) - 0.81, false)
                         })
                         .width(Length::Fill)

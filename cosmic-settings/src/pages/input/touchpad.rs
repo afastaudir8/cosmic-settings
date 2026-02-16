@@ -97,7 +97,7 @@ fn touchpad() -> Section<crate::pages::Message> {
                             + 0.81)
                             * 70.71;
 
-                        let slider = widget::slider(1.0..=100.0, value, |value| {
+                        let slider = widget::slider(1.0..=150.0, value, |value| {
                             Message::SetMouseSpeed((value / 70.71) - 0.81, true)
                         })
                         .width(Length::Fill)
